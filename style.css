@@ -86,4 +86,75 @@ body
 	border-bottom-right-radius: 4px;
 }
 .island_popup 
+
+position: absolute;
+top: 10px;
+width: 90px;
+height: 25px;
+background: #000;
+border-radius: 20px;
+transition: 0.5s ease-in-out;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* width: 200px; */
+}
+
+.island_popup:hover 
+{
+width: 200px;
+height: 25px;
+border-radius: 50px;
+}
+.island_popup.active
+{
+width: 250px;
+height: 60px;
+border-radius: 50px;
+} 
+.content 
+{
+position: relative;
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 10px;
+line-height: 25px;
+}
+.content p 
+{
+color: #fff;
+font-size: 0.65em;
+visibility: hidden;
+opacity: 0;
+cursor: default;
+transition: 0.5s;
+}
+.action 
+{
+position: relative;
+top: 5px;
+gap: 12px;
+display: flex;
+visibility: hidden;
+opacity: 0;
+transition: 0.5s;
+}
+.island_popup.active .action
+{
+top: 12px;
+}
+ion-icon.red
+{
+color: #fd443b;
+transform: rotate(135deg); 
+cursor: pointer; 
+transition: 0.5s;
+}
+ion-icon.green
+{
+color: #31d059;
+cursor: pointer;
+transition: 0.5s;    
+}
 {
